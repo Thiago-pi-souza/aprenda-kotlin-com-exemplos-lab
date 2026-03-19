@@ -16,7 +16,7 @@ data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional> =
 fun main() {
     println("Quais os novos alunos do curso?")
     val novosAlunos = mutableListOf<Usuario>()
-    for (i in 1..3) {  // Reduced to 3 for testing, change back to 10 as needed
+    for (i in 1..3) {  
         print("Nome do aluno ${i}: ")
         val nomeUser = readln()
         novosAlunos.add(Usuario(nomeUser))
@@ -24,7 +24,7 @@ fun main() {
 
     println("Quais os conteudos educacionais do curso?")
     val conteudos = mutableListOf<ConteudoEducacional>()
-    for (i in 1..3) {  // Reduced to 3 for testing, change back to 10 as needed
+    for (i in 1..3) {  
         print("Nome do conteudo ${i}: ")
         val nomeCE = readln()
         conteudos.add(ConteudoEducacional(nomeCE))
